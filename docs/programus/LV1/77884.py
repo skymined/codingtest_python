@@ -7,12 +7,16 @@
 def solution(left, right):
     answer = 0
     for i in range(left, right+1):
+        num = "even"
         for j in range(1,i+1) :
             if j * j  == i :
                 num = "odd"
-            e
-            
-
+            else : 
+                pass
+        if num == "even" :
+            answer += i
+        elif num == 'odd' :
+            answer -=i
     return answer
 
 solution(13, 17)
