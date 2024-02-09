@@ -6,9 +6,15 @@
 
 def solution(number):
     answer = 0
+    while len(number) >=3 :
+        num = number[1] + int([i for i in number]) + int([i for i in number])
+        if num == 0 :
+            answer +=1
+        answer = int(answer/2)
+        number.remove(number[1])
     return answer
 
 
-solution([-2, 3, 0, 2, -5], 2)
+solution([-2, 3, 0, 2, -5])
 pass
 
